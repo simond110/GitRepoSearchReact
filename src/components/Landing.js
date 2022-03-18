@@ -3,7 +3,6 @@ import styled, { css } from "styled-components";
 import SearchBar from "./SearchBar";
 import { GoMarkGithub as GithubIcon } from "react-icons/go";
 import { useHistory, withRouter } from "react-router-dom";
-import { FaUserSecret } from "react-icons/fa";
 import { DivFlexCenter } from "../globals/styles";
 
 const Container = styled.div`
@@ -23,21 +22,6 @@ const Title = styled(DivFlexCenter)`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.title};
     gap: 1rem;
-  `}
-`;
-
-const SecretLI = styled.a`
-  ${({ theme }) => css`
-    color: ${theme.colors.secondary};
-    font-size: 2rem;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    cursor: pointer;
-
-    &:hover {
-      color: ${theme.colors.primary};
-    }
   `}
 `;
 
